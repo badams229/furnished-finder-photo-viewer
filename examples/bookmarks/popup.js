@@ -62,5 +62,6 @@ function openImagesPage(urls) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  begin();
+  var button = document.getElementById('openPage');
+  button.addEventListener('click', begin);
 });
