@@ -1,10 +1,17 @@
 {
   "name": "My Bookmarks",
   "description": "A browser action with a popup dump of all bookmarks, including search, add, edit and delete.",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "permissions": [
-    "bookmarks"
+    "scripting", "activeTab", "tabs"
+  ],
+  "host_permissions": ["https://www.furnishedfinder.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.furnishedfinder.com/property/*"],
+      "js": ["popup.js"]
+    }
   ],
   "action": {
     "default_title": "My Bookmarks",
