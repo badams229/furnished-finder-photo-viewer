@@ -1,6 +1,6 @@
 {
-  "name": "My Bookmarks",
-  "description": "A browser action with a popup dump of all bookmarks, including search, add, edit and delete.",
+  "name": "FF Image Viewer",
+  "description": "Grab the slideshow of FF photos and open them in a new tab.",
   "version": "1.2",
   "manifest_version": 3,
   "permissions": [
@@ -14,7 +14,7 @@
     }
   ],
   "action": {
-    "default_title": "My Bookmarks",
+    "default_title": "FF Image Viewer",
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   }
