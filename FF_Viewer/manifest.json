@@ -6,13 +6,6 @@
   "permissions": [
     "scripting", "activeTab", "tabs"
   ],
-  "host_permissions": ["https://www.furnishedfinder.com/*"],
-  "content_scripts": [
-    {
-      "matches": ["https://*.furnishedfinder.com/property/*"],
-      "js": ["popup.js"]
-    }
-  ],
   "action": {
     "default_title": "FF Image Viewer",
     "default_icon": "image-viewer.png",
